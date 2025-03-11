@@ -1,0 +1,11 @@
+app/
+├── data/
+│   ├── model/       <- Data models (Moshi)
+│   ├── repository/  <- Repository layer (optional)
+│   ├── di/          <- Hilt module for dependency injection
+│   ├── assets/      <- JSON files
+├── ui/
+│   ├── screens/     <- Two screens (DataScreen, SettingsScreen)
+│   ├── components/  <- UI components (if needed)
+│   ├── navigation/  <- Navigation setup
+├── MainActivity.kt  <- Entry point

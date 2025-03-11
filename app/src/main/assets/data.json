@@ -1,0 +1,126 @@
+{
+  "http_exceptions": [
+    {
+      "title": "400 Bad Request",
+      "headline": "Invalid request data",
+      "description": "The server cannot process the request due to client error."
+    },
+    {
+      "title": "401 Unauthorized",
+      "headline": "Authentication required",
+      "description": "The client must authenticate itself to get the requested response."
+    },
+    {
+      "title": "403 Forbidden",
+      "headline": "Access is denied",
+      "description": "The server understands the request but refuses to authorize it."
+    },
+    {
+      "title": "404 Not Found",
+      "headline": "Resource does not exist",
+      "description": "The server cannot find the requested resource."
+    },
+    {
+      "title": "405 Method Not Allowed",
+      "headline": "Incorrect HTTP method",
+      "description": "The request method is known by the server but is not supported for the resource."
+    },
+    {
+      "title": "408 Request Timeout",
+      "headline": "Client took too long",
+      "description": "The server timed out waiting for the request."
+    },
+    {
+      "title": "409 Conflict",
+      "headline": "Conflict with resource state",
+      "description": "The request conflicts with the current state of the target resource."
+    },
+    {
+      "title": "410 Gone",
+      "headline": "Resource removed",
+      "description": "The requested resource is no longer available and will not be available again."
+    },
+    {
+      "title": "413 Payload Too Large",
+      "headline": "Request body too large",
+      "description": "The request is larger than the server is willing or able to process."
+    },
+    {
+      "title": "415 Unsupported Media Type",
+      "headline": "Media type not supported",
+      "description": "The server refuses to process the request because of an unsupported format."
+    },
+    {
+      "title": "422 Unprocessable Entity",
+      "headline": "Validation error",
+      "description": "The request is well-formed but contains semantic errors."
+    },
+    {
+      "title": "429 Too Many Requests",
+      "headline": "Rate limit exceeded",
+      "description": "The user has sent too many requests in a given time."
+    },
+    {
+      "title": "500 Internal Server Error",
+      "headline": "Server-side error",
+      "description": "The server encountered a situation it does not know how to handle."
+    },
+    {
+      "title": "502 Bad Gateway",
+      "headline": "Invalid response from upstream",
+      "description": "The server received an invalid response from the upstream server."
+    },
+    {
+      "title": "503 Service Unavailable",
+      "headline": "Server overloaded or under maintenance",
+      "description": "The server cannot handle the request due to overload or maintenance."
+    },
+    {
+      "title": "504 Gateway Timeout",
+      "headline": "Upstream server timeout",
+      "description": "The server did not receive a timely response from another server."
+    }
+  ],
+  "http_methods": [
+    {
+      "title": "GET",
+      "headline": "Retrieve data",
+      "description": "Used to request data from a specified resource."
+    },
+    {
+      "title": "POST",
+      "headline": "Create a resource",
+      "description": "Sends data to create a new resource on the server."
+    },
+    {
+      "title": "PUT",
+      "headline": "Replace a resource",
+      "description": "Updates or replaces a resource entirely."
+    },
+    {
+      "title": "PATCH",
+      "headline": "Partially update a resource",
+      "description": "Applies partial modifications to a resource."
+    },
+    {
+      "title": "DELETE",
+      "headline": "Remove a resource",
+      "description": "Deletes the specified resource."
+    },
+    {
+      "title": "HEAD",
+      "headline": "Retrieve headers only",
+      "description": "Like GET but retrieves only headers, no body."
+    },
+    {
+      "title": "OPTIONS",
+      "headline": "Retrieve supported methods",
+      "description": "Used to describe the communication options for the target resource."
+    },
+    {
+      "title": "TRACE",
+      "headline": "Debugging request",
+      "description": "Echoes the received request for debugging purposes."
+    }
+  ]
+}
