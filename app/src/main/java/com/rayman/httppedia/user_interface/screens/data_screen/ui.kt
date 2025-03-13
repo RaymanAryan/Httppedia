@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun ExpandableHttpList(
     viewModel: DataViewModel = hiltViewModel(),
-    screens: Screens = remember { Screens() }
+    screens: Screens
 ) {
     val items by viewModel.data.collectAsState()
 
@@ -70,5 +70,5 @@ class Screens {
 @Preview
 @Composable
 fun ExpandableHttpListPreview() {
-    ExpandableHttpList()
+    ExpandableHttpList(screens = Screens())
 }

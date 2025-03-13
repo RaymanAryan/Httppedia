@@ -1,6 +1,9 @@
 package com.rayman.httppedia.data.di
 
 import android.content.Context
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import com.rayman.httppedia.data.dataStore
 import com.rayman.httppedia.data.repository.DataRepository
 import com.squareup.moshi.Moshi
 import dagger.Module
@@ -22,6 +25,11 @@ class AppModule {
     @Singleton
     fun provideDataRepository(@ApplicationContext context: Context , moshi: Moshi): DataRepository{
         return DataRepository(context,moshi)
+    }
+    @Provides
+    @Singleton
+    fun provideDataStore(@ApplicationContext context: Context): DataStore<Preferences> {
+        return context.dataStore
     }
 
 }

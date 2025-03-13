@@ -4,15 +4,13 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
+import androidx.compose.runtime.remember
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
 import com.rayman.httppedia.ui.theme.HttppediaTheme
-import com.rayman.httppedia.user_interface.screens.data_screen.DataScreenPriview
+import com.rayman.httppedia.user_interface.navigation.NavGraph
+import com.rayman.httppedia.user_interface.screens.data_screen.Screens
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -22,24 +20,21 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             HttppediaTheme {
-                DataScreenPriview()
+                HTTPPediaApp()
             }
         }
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun HTTPPediaApp() {
+    val screens = remember { Screens() }
+    val navController = rememberNavController()
+    NavGraph(navController, screens)
 }
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
-    HttppediaTheme {
-        Greeting("Android")
-    }
+fun AppPreview() {
+        HTTPPediaApp()
 }

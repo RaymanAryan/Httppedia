@@ -1,6 +1,7 @@
 package com.rayman.httppedia.data.model
 
+import androidx.annotation.Keep
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class HttpMethod(val title: String, val headline: String, val description: String)
+@Keep class HttpMethod(val title: String, val headline: String, val description: String)
