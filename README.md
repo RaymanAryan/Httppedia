@@ -1,6 +1,6 @@
-Httpedia
+Httppedia
 
-Httpedia is a powerful and user-friendly Android application designed to provide detailed insights into HTTP requests and responses. Whether you're a developer, network analyst, or cybersecurity enthusiast, Httpedia helps you analyze and debug HTTP communications efficiently.
+Httppedia is a powerful and user-friendly Android application designed to provide detailed insights into HTTP requests and responses. Whether you're a developer, network analyst, or cybersecurity enthusiast, Httppedia helps you analyze and debug HTTP communications efficiently.
 
 Features
 
