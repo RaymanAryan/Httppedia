@@ -18,7 +18,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/RaymanAryan/httpedia.git
+git clone https://github.com/RaymanAryan/httppedia.git
 
 Open the project in Android Studio.
 
