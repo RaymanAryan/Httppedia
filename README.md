@@ -30,18 +30,6 @@ Kotlin – For Android development.
 
 Jetpack Compose – For UI design.
 
-OkHttp – For handling HTTP requests.
-
-FastAPI (Optional) – If using a backend for additional processing.
-
-Usage
-
-Open the app and start monitoring network requests.
-
-Use the request builder to send and analyze HTTP requests.
-
-View saved logs for debugging and reference.
-
 Contributing
 
 Contributions are welcome! Feel free to fork the repository and submit a pull request with your improvements.
