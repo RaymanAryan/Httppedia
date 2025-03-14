@@ -1,20 +1,17 @@
 package com.rayman.httppedia.data
 
-import android.content.Context
 import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
-import androidx.datastore.preferences.preferencesDataStore
-import jakarta.inject.Inject
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import androidx.datastore.preferences.core.Preferences
+import javax.inject.Inject
 
-val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
-
-
-class SettingsRepository @Inject constructor(private val dataStore: DataStore<Preferences>) {
+class SettingsRepository @Inject constructor(
+    private val dataStore: DataStore<Preferences> // Using Hilt-provided DataStore
+) {
     private object PreferencesKeys {
         val DARK_MODE = booleanPreferencesKey("dark_mode")
         val USERNAME = stringPreferencesKey("username")
@@ -26,7 +23,6 @@ class SettingsRepository @Inject constructor(private val dataStore: DataStore<Pr
     suspend fun saveThemePreference(isDarkMode: Boolean) {
         dataStore.edit { it[PreferencesKeys.DARK_MODE] = isDarkMode }
     }
-
 
     suspend fun saveUsername(name: String) {
         dataStore.edit { it[PreferencesKeys.USERNAME] = name }
