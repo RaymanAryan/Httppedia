@@ -77,8 +77,9 @@ dependencies {
     implementation(libs.moshi)
     implementation(libs.moshi.kotlin)
     ksp(libs.moshi.kotlin.codegen)
-    implementation(libs.hilt.android)
 
+
+    implementation(libs.hilt.android)
     ksp(libs.hilt.compiler) // ✅ Replace kapt with ksp
 
     // For instrumentation tests
